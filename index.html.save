@@ -5,26 +5,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Md Aquib Molla</title>
+    <title>Aquib Molla</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- Navigation -->
-
-<nav>
-    <div class="nav-container">
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#projects">Projects</a>
-        <a href="#publications">Publications</a>
-        <a href="#talks">Talks</a>
-        <a href="#contact">Contact</a>
-    </div>
-</nav>
-
-
+```
+<!-- Navigation
 <!-- Hero Section -->
 
 <header class="hero">
@@ -35,9 +23,9 @@
 
     <div class="hero-content">
 
-        <h1>Md Aquib Molla</h1>
+        <h1>Aquib Molla</h1>
 
-        <h3>Senior Research Fellow (CSIR) in Physics</h3>
+        <h3>PhD Candidate in Physics</h3>
 
         <p>
             Department of Physics<br>
@@ -54,10 +42,11 @@
         </p>
 
         <div class="hero-buttons">
-    		<a href="https://scholar.google.com/citations?user=QGV3k8oAAAAJ&hl=en" target="_blank">Google Scholar</a>
-    		<a href="https://orcid.org/0000-0003-0416-1349" target="_blank">ORCID</a>
-    		<a href="https://github.com/AquibMolla" target="_blank">GitHub</a>
-	</div>
+            <a href="#">CV</a>
+            <a href="#">Google Scholar</a>
+            <a href="#">ORCID</a>
+            <a href="https://github.com/AquibMolla">GitHub</a>
+        </div>
 
     </div>
 
@@ -70,15 +59,11 @@
     <h2>About Me</h2>
 
     <p>
-	    I am a <strong>Doctoral researcher in Physics</strong> at <strong>Vidyasagar College</strong> under <strong>University of Calcutta</strong>, working in 			<strong>nonequilibrium 	statistical physics</strong> with a growing focus on <strong>active matter</strong>. My 			research investigates how <strong>stochastic 	dynamics</strong>, <strong>environmental feedback</strong>, and 			<strong>resource constraints</strong> shape <strong>transport</strong>, <strong>search</strong>, and <strong>collective 			behavior</strong> in complex systems.
-    </p>
-
-    <p>
-		I combine <strong>analytical theory</strong>, <strong>stochastic modeling</strong>, and <strong>numerical simulations	</strong> to study <strong>active particles</strong>, <strong>random walks</strong>, <strong>foraging dynamics</strong>, 			<strong>first-passage processes</strong>, and <strong>transport in evolving environments</strong>. My goal is to uncover 			the principles underlying <strong>emergence</strong>, <strong>adaptation</strong>, and <strong>self-organization</strong> 			in nonequilibrium systems.
-    </p>
-
-    <p>
-               I welcome opportunities for <strong>collaboration</strong>, <strong>scientific discussion</strong>, and 			<strong>interdisciplinary research</strong>.
+        I am a PhD candidate in Physics at the University of Calcutta.
+        My research focuses on stochastic processes in complex systems,
+        with particular interests in nonequilibrium statistical physics,
+        first-passage phenomena, active matter, foraging dynamics,
+        quantum walks, and transport in evolving environments.
     </p>
 
 </section>
@@ -205,27 +190,6 @@
         <li>2026 — Preparing postdoctoral applications.</li>
 
     </ul>
-    
-</section>
-    
-<section id="cv">
-
-<h2>Curriculum Vitae</h2>
-
-<p>
-    A detailed overview of my academic background,
-    research experience, publications, talks, and awards
-    can be found in my CV.
-</p>
-
-<div>
-    <a href="files/Aquib_Molla_CV.pdf" download class="cv-button">
-    	Download CV (PDF)
-    </a>
-</div>
-
-</section>
-
 
 </section>
 
@@ -237,19 +201,19 @@
 
     <p>
         Department of Physics<br>
-        Vidyasagar College<br>
         University of Calcutta
     </p>
 
     <p>
-        Email: mollaaquib@gmail.com
+        Email: your.email@domain.com
     </p>
 
 </section>
 
 <footer>
-    <p>© 2026 Md Aquib Molla</p>
+    <p>© 2026 Aquib Molla</p>
 </footer>
+```
 
 </body>
 
