@@ -168,6 +168,22 @@ text-decoration: underline;
 
 }
 
+.cv-button {
+    display: inline-block;
+    background: var(--primary);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cv-button:hover {
+    background: var(--secondary);
+    color: white;
+}
+
 /* ---------- SECTIONS ---------- */
 
 section {
