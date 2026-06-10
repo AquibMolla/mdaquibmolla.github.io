@@ -1,0 +1,39 @@
+body {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px;
+    background: #1f2430;
+    color: #e6e6e6;
+    font-family: Georgia, serif;
+    line-height: 1.7;
+}
+
+a {
+    color: #8ec5ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1, h2 {
+    color: #ffffff;
+}
+
+nav {
+    margin-bottom: 30px;
+}
+
+nav a {
+    margin-right: 20px;
+}
+
+.subtitle {
+    color: #bdbdbd;
+    margin-top: -10px;
+}
+
+.section {
+    margin-top: 40px;
+}
