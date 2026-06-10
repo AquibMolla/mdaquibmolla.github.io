@@ -25,7 +25,6 @@ scroll-behavior: smooth;
 
 body {
 
-```
 margin: 0;
 
 font-family:
@@ -68,27 +67,22 @@ display: flex;
 gap: 25px;
 
 justify-content: center;
-```
 
 }
 
 .nav-container a {
 
-```
 color: white;
 
 text-decoration: none;
 
 font-size: 15px;
-```
 
 }
 
 .nav-container a:hover {
 
-```
 color: #d9ead7;
-```
 
 }
 
@@ -117,13 +111,12 @@ gap: 40px;
 align-items: center;
 
 padding: 50px 20px;
-```
+
 
 }
 
 .hero-image img {
 
-```
 width: 240px;
 
 height: 240px;
@@ -131,19 +124,16 @@ height: 240px;
 object-fit: cover;
 
 border-radius: 4px;
-```
 
 }
 
 .hero-content h1 {
 
-```
 margin: 0;
 
 color: var(--primary);
 
 font-size: 2.2rem;
-```
 
 }
 
