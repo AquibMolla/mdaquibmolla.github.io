@@ -171,21 +171,16 @@ text-decoration: underline;
 /* ---------- SECTIONS ---------- */
 
 section {
-
-padding: 20px;
-
-margin-bottom: 30px;
-
-transition: all 0.3s ease;
-
+    background: white;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
 }
 
 section:hover {
-
-transform: translateY(-4px);
-
-box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
 }
 
 section h2 {
