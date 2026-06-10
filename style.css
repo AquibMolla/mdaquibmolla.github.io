@@ -1,7 +1,6 @@
 
 :root {
 
-```
 --bg: #f6f5f0;
 
 --primary: #315c2b;
@@ -13,7 +12,6 @@
 --muted: #666666;
 
 --border: #d9d9d9;
-```
 
 }
 
@@ -39,7 +37,6 @@ color: var(--text);
 line-height: 1.7;
 
 font-size: 16px;
-```
 
 }
 
@@ -47,17 +44,14 @@ font-size: 16px;
 
 nav {
 
-```
 background: var(--primary);
 
 padding: 12px 0;
-```
 
 }
 
 .nav-container {
 
-```
 max-width: 900px;
 
 margin: auto;
@@ -103,7 +97,6 @@ margin: auto;
 
 .hero {
 
-```
 display: flex;
 
 gap: 40px;
@@ -139,21 +132,17 @@ font-size: 2.2rem;
 
 .hero-content h3 {
 
-```
 margin-top: 10px;
 
 color: var(--secondary);
 
 font-weight: normal;
-```
 
 }
 
 .hero-content p {
 
-```
 color: var(--muted);
-```
 
 }
 
@@ -161,29 +150,23 @@ color: var(--muted);
 
 .hero-buttons {
 
-```
 margin-top: 20px;
-```
 
 }
 
 .hero-buttons a {
 
-```
 margin-right: 15px;
 
 color: var(--primary);
 
 text-decoration: none;
-```
 
 }
 
 .hero-buttons a:hover {
 
-```
 text-decoration: underline;
-```
 
 }
 
@@ -191,17 +174,14 @@ text-decoration: underline;
 
 section {
 
-```
 padding: 20px;
 
 margin-bottom: 30px;
-```
 
 }
 
 section h2 {
 
-```
 color: var(--primary);
 
 border-bottom:
@@ -210,7 +190,6 @@ border-bottom:
 padding-bottom: 8px;
 
 margin-bottom: 20px;
-```
 
 }
 
@@ -218,39 +197,31 @@ margin-bottom: 20px;
 
 .research-grid {
 
-```
 display: block;
-```
 
 }
 
 .card {
 
-```
 background: transparent;
 
 padding: 0;
 
 margin-bottom: 18px;
-```
 
 }
 
 .card h3 {
 
-```
 color: var(--primary);
 
 margin-bottom: 5px;
-```
 
 }
 
 .card p {
 
-```
 margin-top: 0;
-```
 
 }
 
@@ -258,19 +229,15 @@ margin-top: 0;
 
 .publication {
 
-```
 margin-bottom: 18px;
-```
 
 }
 
 .publication h3 {
 
-```
 margin-bottom: 5px;
 
 color: var(--primary);
-```
 
 }
 
@@ -278,9 +245,7 @@ color: var(--primary);
 
 .visit {
 
-```
 margin-bottom: 15px;
-```
 
 }
 
@@ -288,17 +253,13 @@ margin-bottom: 15px;
 
 #news ul {
 
-```
 padding-left: 20px;
-```
 
 }
 
 #news li {
 
-```
 margin-bottom: 10px;
-```
 
 }
 
@@ -306,17 +267,13 @@ margin-bottom: 10px;
 
 a {
 
-```
 color: var(--primary);
-```
 
 }
 
 a:hover {
 
-```
 color: var(--secondary);
-```
 
 }
 
@@ -324,7 +281,6 @@ color: var(--secondary);
 
 footer {
 
-```
 max-width: 900px;
 
 margin: auto;
@@ -337,7 +293,6 @@ border-top:
     1px solid var(--border);
 
 color: var(--muted);
-```
 
 }
 
@@ -345,7 +300,6 @@ color: var(--muted);
 
 @media (max-width: 768px) {
 
-```
 .hero {
 
     flex-direction: column;
@@ -364,7 +318,6 @@ color: var(--muted);
 
     flex-wrap: wrap;
 }
-```
 
 }
 
