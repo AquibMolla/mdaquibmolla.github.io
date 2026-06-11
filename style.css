@@ -389,3 +389,20 @@ body.fade-out {
     transform: translateX(-30px);
     transition: all 0.4s ease;
 }
+
+.talk-item {
+    margin-bottom: 25px;
+    line-height: 1.7;
+}
+
+.visit-item {
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+
+.nav-container a.active {
+    font-weight: bold;
+    border-bottom: 2px solid white;
+    padding-bottom: 3px;
+}
+
