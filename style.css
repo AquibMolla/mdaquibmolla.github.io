@@ -371,3 +371,21 @@ color: var(--muted);
 
 }
 
+body {
+    opacity: 0;
+    transform: translateX(30px);
+    animation: pageEnter 0.5s ease forwards;
+}
+
+@keyframes pageEnter {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+body.fade-out {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: all 0.4s ease;
+}
