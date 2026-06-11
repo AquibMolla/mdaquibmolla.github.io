@@ -271,25 +271,16 @@ color: var(--primary);
 }
 
 .content h2 {
-    margin-top: 40px;
-    margin-bottom: 15px;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 5px;
+    margin-top: 35px;
+    color: var(--primary);
 }
 
-.pub-item {
-    margin-bottom: 25px;
-    line-height: 1.7;
+.content h3 {
+    margin-top: 25px;
+    margin-bottom: 12px;
+    color: var(--secondary);
 }
 
-.pub-links {
-    margin-top: 5px;
-    font-size: 0.95rem;
-}
-
-.pub-links a {
-    text-decoration: none;
-}
 
 /* ---------- VISITS ---------- */
 
@@ -405,4 +396,21 @@ body.fade-out {
     border-bottom: 2px solid white;
     padding-bottom: 3px;
 }
+.content {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
 
+.pub-item {
+    margin-bottom: 18px;
+    line-height: 1.6;
+}
+
+.pub-item a {
+    text-decoration: none;
+}
+
+.pub-item a:hover {
+    text-decoration: underline;
+}
