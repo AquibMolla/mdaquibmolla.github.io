@@ -414,3 +414,15 @@ body.fade-out {
 .pub-item a:hover {
     text-decoration: underline;
 }
+
+.publication-item {
+  background: white;
+  padding: 25px;
+    padding-left: 25px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border-left: 4px solid #4a7c59;
+  <!-- #e74c3c --> box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  position: relative;
+  padding-left: 70px;
