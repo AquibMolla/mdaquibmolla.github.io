@@ -21,7 +21,7 @@ html {
 scroll-behavior: smooth;
 }
 
-body {
+/*body {
 
 margin: 0;
 
@@ -38,6 +38,12 @@ line-height: 1.7;
 
 font-size: 16px;
 
+}*/
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
 }
 
 /* ---------- NAVIGATION ---------- */
@@ -285,11 +291,35 @@ color: var(--primary);
 /* ---------- VISITS ---------- */
 
 .visit {
-
-margin-bottom: 15px;
+border-radius: 10px;
+padding: 25px;
+margin-top: 20px;
+margin-bottom: 10px;
+display: flex;
+flex-direction: column;
+gap: 10px;
+line-height: 1.6;
 
 }
 
+.visit h2 {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  color: #1a3d0a;
+  border-bottom: 3px solid #4a7c59;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+.visit-header {
+  background: linear-gradient(135deg, #4a7c59, #7ba05a);
+  color: white;
+  padding: 25px;
+}
+
+.visit-body {
+  padding: 25px;
+}
 /* ---------- NEWS ---------- */
 
 #news ul {
@@ -386,10 +416,6 @@ body.fade-out {
     line-height: 1.7;
 }
 
-.visit-item {
-    margin-bottom: 30px;
-    line-height: 1.7;
-}
 
 .nav-container a.active {
     font-weight: bold;
@@ -426,3 +452,21 @@ body.fade-out {
   transition: all 0.3s ease;
   position: relative;
   padding-left: 70px;
+}
+
+.publication-number {
+  position: absolute;
+  left: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(135deg, #4a7c59, #2d5016);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+}  
