@@ -250,6 +250,85 @@ margin-top: 0;
 
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.main-content {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.header {
+  background: linear-gradient(135deg, #1a3d0a, #2d5016, #4a7c59);
+  color: white;
+  padding: 60px 40px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.research-areas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 30px;
+  max-width: 100%;
+}
+
+.research-card {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  padding: 0;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.research-card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  background: linear-gradient(135deg, #4a7c59, #7ba05a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.research-card-content {
+  padding: 30px;
+}
+
+.research-card-links {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.research-link {
+  display: inline-block;
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #4a7c59, #2d5016);
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+
 /* ---------- PUBLICATIONS ---------- */
 
 .publication-item {
@@ -473,6 +552,61 @@ line-height: 1.6;
   padding: 25px;
 }
 
+.visit-item {
+  background: white;
+  padding: 35px;
+    padding-left: 35px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border-left: 4px solid #4a7c59;
+  <!-- #e74c3c --> box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  position: relative;
+  padding-left: 60px;
+}
+
+.visit-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.visit-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.visit-header {
+  position: relative;
+  background: linear-gradient(135deg, #4a7c59, #7ba05a);
+  color: white;
+  padding: 25px;
+}
+
+.visit-title {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.visit-meta {
+  opacity: 0.9;
+  font-size: 0.9rem;
+}
+
+.visit-card:hover {
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 12px 28px rgba(74, 124, 89, 0.18);
+  border-left-color: #2d5a38;
+}
+
+.visit-body {
+  padding: 25px;
+}
+
 /*------------Talks-----------*/
 
 .talks-item {
@@ -502,7 +636,7 @@ line-height: 1.6;
 }
 
 .talk-item:hover {
-  transform: translateY(-6px) scale(1.1);
+  transform: translateY(-6px) scale(1.00);
   box-shadow: 0 12px 28px rgba(74, 124, 89, 0.18);
   border-left-color: #2d5a38;
 }
@@ -528,7 +662,6 @@ line-height: 1.6;
   border-left-color: #2d5a38;
 }
 
-
 .talk-header {
   position: relative;
   background: linear-gradient(135deg, #4a7c59, #7ba05a);
@@ -552,34 +685,46 @@ line-height: 1.6;
 
 .talk-links {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 50px;
+  right: 30px;
   display: flex;
-  justify-content: flex-end;
+  align-items: center;      /* vertical centering */
+  justify-content: center;  /* horizontal centering */
+  justify-content: flex;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: white;
+  border: 3px solid #4a7c59;
   gap: 10px;
   margin-top: 8px;
 }
 
-.talk-link {
-  display: inline-flex;
-  /*float: right;*/
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: #FF0000;
-  color: white;
-  text-decoration: none;
-  font-size: 1.2rem;
-  transition: all 0.3s ease;
-  cursor: pointer;
+.talk-links i {
+    color: #8B0000;
+    font-size: 2rem;
 }
 
-.talk-link:hover {
-  transform: scale(1.1);
+/*.talk-link {
+  display: inline-flex;
+  float: right;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #1a73e8;  
+  color: #8B0000;
+  text-decoration: none;
+  font-size: 3.0rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}*/
+
+/*.talk-link:hover {
+  transform: scale(1.08);
   background-color: #cc0000;
-}
+}*/
 
 /* ---------- NEWS ---------- */
 
