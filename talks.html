@@ -19,8 +19,8 @@
         <a href="publications.html">Publications</a>
         <a href="talks.html" class="active">Talks</a>
         <a href="visits.html">Visits</a>
-        <a href="#cv">CV</a>
-        <a href="#contact">Contact</a>
+        <!<a href="#cv"><!CV</a>
+        <!<a href="#contact"><!Contact</a>
     </div>
 </nav>
 
@@ -83,6 +83,15 @@
     		</div>
     		<div class="talk-body">
     			<p>
+    			The orderly spread of electrical signals in cardiac tissue is essential for proper heart function. When this propagation is disrupted, due to reduced excitability or structural damage, it can lead to life-threatening arrhythmias. In this work, we present a simplified, coarse-grained model to study cardiac excitation dynamics using tools from percolation theory.
+    			
+    			The model represents heart tissue as a two-dimensional lattice composed of excitable, refractory, and inactive sites. Excitable sites are activated by neighboring activity and transition through a refractory period before recovering. Inactive sites mimic damaged or non-conductive regions, introducing disorder into the system. Signal propagation is governed by local, time- dependent rules inspired by biological electrophysiology.
+    			
+    			By tuning the fraction of excitable sites, we identify a critical threshold below which sustained signal propagation is no longer possible. Above this percolation threshold, the system exhibits complex transient behavior, including long-lived wave patterns and sensitivity to initial conditions. Although the model avoids fine biological detail, it captures key qualitative features of cardiac signal dynamics.
+    			
+    			The temporal evolution, irreversibility, and sensitivity to disorder place the system within the broader class of non-equilibrium excitable media. Our results demonstrate how structural inhomogeneities, even in a simplified model, can lead to dramatic changes in global signal behavior.
+    			
+    			This approach provides a minimal but powerful framework for understanding the interaction between geometry, dynamics, and disorder in cardiac systems, providing insight into the mechanisms that can lead to normal rhythm breakdown and the onset of arrhythmia.
     			</p>
     		</div>
     	</div> 
@@ -96,6 +105,11 @@
     		</div>
     		<div class="talk-body">
     			<p>
+    			We study a simple spatial model to examine when selfish behavior helps or hinders a population competing for limited resources. Agents move randomly on a one-dimensional periodic lattice and compete for renewable food. Each agent adopts one of two <strong>strategies</strong>: <strong>cooperation</strong>, in which food is shared among agents at a site, and <strong>selfish</strong> exploitation, in which a single agent monopolizes the resource. Strategies are adaptive and may change due to local competitive pressure and unsuccessful exploitation.
+
+			Starting from random initial conditions, the system evolves toward a long-time statistical steady state. At low agent density, cooperation dominates as resources are relatively abundant. As density increases, selfish behavior becomes more prevalent and suppresses cooperation. However, cooperation never disappears completely, even at high densities. Spatial crowding and stochastic strategy switching prevent selfish agents from fully dominating the system, leading to stable coexistence rather than absorbing states.
+			
+			Overall, the model demonstrates that selfish behavior does not always confer an advantage in resource-limited environments and highlights the crucial role of spatial interactions in shaping collective outcomes.
     			</p>
     		</div>
     	</div> 
@@ -118,28 +132,32 @@
     		</div>
     		<div class="talk-body">
     			<p>
+    			In our study, we model the heart's biological system using percolation on a 2D lattice with three types of cells: <strong>Active</strong>, <strong>Waiting</strong>, and <strong>Inactive</strong>. The system incorporates <strong>inhibitory</strong> and <strong>refractory</strong> effects, influenced by two parameters: p_{act}, the probability of a Waiting cell becoming Active, and p_{switch}, the probability of an Inactive cell becoming Waiting. Inactive cells undergo a refractory period before reverting to Waiting.
+    			
+    			Our findings show that inhibition raises the percolation threshold, slowing signal propagation. Conversely, reducing the refractory time lowers the threshold and speeds up signal transmission, but it can also trap the signal within the system. We analyzed the distribution of Inactive cells and critical exponents, observing that the Rushbrooke inequality is satisfied.
     			</p>
     		</div>
     	</div> 
     </div>
 
-    <div class="talk-item">
-	<h3> ICTS-TIFR, <strong>India</strong></h3>
-        <p>
-            <strong>Title: <a href = "https://www.youtube.com/watch?v=o2fM-MvFTlg&t=716s"> Heartbeats and Flow: Exploring Percolation Theory in Cardiac Cells</a></strong>
-        </p>
-    </div>
-
     <div class="year-divider">
     <div class="year-label">2023</div>
     </div>
-
-    <div class="talk-item">
-	<h3> Behala College, <strong>India</strong></h3>
-        <p>
-            <strong>Title:Study of Heart and Brain-like Cells in the Light of Percolation Theory</strong>
-        </p>
+    
+    <div class="talk-grid">
+    	<div class="talk-card" style="transform translateY(-10px) scale(1.04);">
+    		<div class="talk-header">
+    			<h3 class="talk-title"> Study of Heart and Brain-like Cells in the Light of Percolation Theory </h3>
+    			<div class="talk-meta"> Behala College <strong>India</strong> </div>
+    		</div>
+    		<div class="talk-body">
+    			<p>
+    			In this work, for systems like heart and brain signal transmission can be studied using percolation theory. In heart-like cells, there are “excitatory” cells but in case of the brain, there are both types of cells “excitatory” and “inhibitory” cells. Cells are categorized in three types: “Active”, “Inactive” and “Waiting” cell. In each Monte Carlo(MC) Step one “Waiting” cell will be converted to an “Active” cell with a probability pact if at least one neighboring cell is Active. An ”Active” cell will become an “Inactive” cell after one MC step. With a probability pswitch an “Inactive” cell will become a “Waiting” one. The signal shows a periodic nature when we increase pswitch and interestingly it has a non-zero saturation value as if the signal never leaves the system. This model can be realized through a walk also and some quantities may be studied in this regard.
+    			</p>
+    		</div>
+    	</div> 
     </div>
+    
 
 </main>
 
