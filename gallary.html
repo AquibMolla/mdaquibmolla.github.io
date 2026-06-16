@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Gallery | M.D. Aquib Molla</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .gallery-section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .gallery-section h1 {
+            margin-bottom: 30px;
+        }
+
+        .slideshow-container {
+            max-width: 900px;
+            margin: auto;
+            position: relative;
+        }
+
+        .slide {
+            display: none;
+        }
+
+        .slide img {
+            width: 100%;
+            max-height: 600px;
+            object-fit: contain;
+            border-radius: 10px;
+        }
+
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 16px;
+            font-size: 24px;
+            color: white;
+            background: rgba(0,0,0,0.4);
+            border-radius: 50%;
+            user-select: none;
+        }
+
+        .prev { left: 10px; }
+        .next { right: 10px; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="gallery.html">Gallery</a>
+</nav>
+
+<section class="gallery-section">
+    <h2>Research Gallery</h2>
+
+    <div class="slideshow-container">
+
+        <div class="slide">
+            <img src="gallery/Gal1.jpeg" alt="Research Image 1">
+        </div>
+
+        <div class="slide">
+            <img src="images/Quantum_Active_Matter.png" alt="Research Image 2">
+        </div>
+
+        <div class="slide">
+            <img src="images/Percolation.png" alt="Research Image 3">
+        </div>
+
+	<div class="slide">
+            <img src="images/IMG20250725181230.heic" alt="Research Image 4">
+        </div>
+        
+        <div class="slide">
+            <img src="images/Active_Matter.png" alt="Research Image 1">
+        </div>
+
+        <div class="slide">
+            <img src="images/Quantum_Active_Matter.png" alt="Research Image 2">
+        </div>
+
+        <div class="slide">
+            <img src="images/Percolation.png" alt="Research Image 3">
+        </div>
+
+	<div class="slide">
+            <img src="images/IMG20250725181230.heic" alt="Research Image 4">
+        </div>
+        
+        <div class="slide">
+            <img src="images/Active_Matter.png" alt="Research Image 1">
+        </div>
+
+        <div class="slide">
+            <img src="images/Quantum_Active_Matter.png" alt="Research Image 2">
+        </div>
+
+        <div class="slide">
+            <img src="images/Percolation.png" alt="Research Image 3">
+        </div>
+
+	<div class="slide">
+            <img src="images/IMG20250725181230.heic" alt="Research Image 4">
+        </div>
+        
+        <div class="slide">
+            <img src="images/Active_Matter.png" alt="Research Image 1">
+        </div>
+
+        <div class="slide">
+            <img src="images/Quantum_Active_Matter.png" alt="Research Image 2">
+        </div>
+
+        <div class="slide">
+            <img src="images/Percolation.png" alt="Research Image 3">
+        </div>
+
+	<div class="slide">
+            <img src="images/IMG20250725181230.heic" alt="Research Image 4">
+        </div>
+        
+        
+        <a class="prev" onclick="changeSlide(-1)">❮</a>
+        <a class="next" onclick="changeSlide(1)">❯</a>
+
+    </div>
+</section>
+
+<script>
+let slideIndex = 0;
+
+function showSlide(n) {
+    const slides = document.getElementsByClassName("slide");
+
+    if (n >= slides.length) slideIndex = 0;
+    if (n < 0) slideIndex = slides.length - 1;
+
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    slides[slideIndex].style.display = "block";
+}
+
+function changeSlide(n) {
+    slideIndex += n;
+    showSlide(slideIndex);
+}
+
+function autoSlide() {
+    slideIndex++;
+    showSlide(slideIndex);
+    setTimeout(autoSlide, 4000);
+}
+
+showSlide(slideIndex);
+autoSlide();
+</script>
+
+</body>
+</html>

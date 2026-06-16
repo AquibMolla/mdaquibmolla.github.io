@@ -858,4 +858,47 @@ body.fade-out {
     padding: 0 20px;
 }
 
+/*------------------- Gallary ----------------*/
 
+.gallery-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.slideshow-container {
+    max-width: 900px;
+    margin: auto;
+    position: relative;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    max-height: 600px;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 16px;
+    font-size: 24px;
+    color: white;
+    background: rgba(0,0,0,0.4);
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Gallery | M.D. Aquib Molla</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .gallery-section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .gallery-section h1 {
+            margin-bottom: 30px;
+        }
+
+        .slideshow-container {
+            max-width: 900px;
+            margin: auto;
+            position: relative;
+        }
+
+        .slide {
+            display: none;
+        }
+
+        .slide img {
+            width: 100%;
+            max-height: 600px;
+            object-fit: contain;
+            border-radius: 10px;
+        }
+
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 16px;
+            font-size: 24px;
+            color: white;
+            background: rgba(0,0,0,0.4);
+            border-radius: 50%;
+            user-select: none;
+        }
+
+        .prev { left: 10px; }
+        .next { right: 10px; }
+    </style>
+</head>
+<body>
+
+<!-- Navigation -->
+
+<nav>
+    <div class="nav-container">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="talks.html">Talks</a>
+        <a href="visits.html">Visits</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="#cv">CV</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<section class="gallery-section">
+    <h2>Research Gallery</h2>
+
+    <div class="slideshow-container">
+
+        <div class="slide">
+            <img src="gallery/Gal1.jpeg" alt="Research Image 1">
+        </div>
+
+        <div class="slide">
+            <img src="gallery/Gal2.jpeg" alt="Research Image 2">
+        </div>
+
+        <div class="slide">
+            <img src="gallery/Gal3.jpeg" alt="Research Image 3">
+        </div>
+
+ 	<div class="slide">
+            <img src="gallery/Gal4.jpeg" alt="Research Image 4">
+        </div>
+
+        <div class="slide">
+            <img src="gallery/Gal5.jpeg" alt="Research Image 5">
+        </div>
+
+        <div class="slide">
+            <img src="gallery/Gal6.jpeg" alt="Research Image 6">
+        </div>
+        
+        <div class="slide">
+            <img src="gallery/Gal7.jpeg" alt="Research Image 7">
+        </div>
+
+        <div class="slide">
+            <img src="gallery/Gal8.jpeg" alt="Research Image 8">
+        </div>
+
+        <div class="slide">
+            <img src="gallery/Gal9.jpeg" alt="Research Image 9">
+        </div>
+        
+        <div class="slide">
+            <img src="gallery/Gal10.jpeg" alt="Research Image 10">
+        </div>
+
+        <div class="slide">
+            <img src="gallery/Gal11.jpeg" alt="Research Image 11">
+        </div>
+
+        <div class="slide">
+            <img src="gallery/Gal12.jpeg" alt="Research Image 12">
+        </div>
+
+	<div class="slide">
+            <img src="gallery/Gal13.jpeg" alt="Research Image 13">
+        </div>
+
+ 	<div class="slide">
+            <img src="gallery/Gal14.jpeg" alt="Research Image 14">
+        </div>
+
+        <div class="slide">
+            <img src="gallery/Gal15.jpeg" alt="Research Image 15">
+        </div>
+
+        <div class="slide">
+            <img src="gallery/Gal16.jpeg" alt="Research Image 16">
+        </div>
+        
+        <div class="slide">
+            <img src="gallery/Gal17.jpeg" alt="Research Image 17">
+        </div>
+
+        <div class="slide">
+            <img src="gallery/Gal18.jpeg" alt="Research Image 18">
+        </div>
+
+        <div class="slide">
+            <img src="gallery/Gal19.jpeg" alt="Research Image 19">
+        </div>
+        
+        <div class="slide">
+            <img src="gallery/Gal20.jpeg" alt="Research Image 20">
+        </div>
+
+        <div class="slide">
+            <img src="gallery/Gal11.jpeg" alt="Research Image 11">
+        </div>
+
+        <div class="slide">
+            <img src="gallery/Gal12.jpeg" alt="Research Image 12">
+        </div>
+
+
+        <a class="prev" onclick="changeSlide(-1)">❮</a>
+        <a class="next" onclick="changeSlide(1)">❯</a>
+
+    </div>
+</section>
+
+<script>
+let slideIndex = 0;
+
+function showSlide(n) {
+    const slides = document.getElementsByClassName("slide");
+
+    if (n >= slides.length) slideIndex = 0;
+    if (n < 0) slideIndex = slides.length - 1;
+
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    slides[slideIndex].style.display = "block";
+}
+
+function changeSlide(n) {
+    slideIndex += n;
+    showSlide(slideIndex);
+}
+
+function autoSlide() {
+    slideIndex++;
+    showSlide(slideIndex);
+    setTimeout(autoSlide, 4000);
+}
+
+showSlide(slideIndex);
+autoSlide();
+</script>
+
+</body>
+</html>
